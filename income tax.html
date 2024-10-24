@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Income Tax
+        var income=500000
+         tax=0
+         if(income<=250000){
+            console.log("their is no tax")
+         }
+         else if(income>250000 && income<=500000){
+            tax=(income-250000)*0.05;
+            console.log(` total tax is ${tax}`)
+         }
+         else if(income<500000 && income>=1000000){
+            tax=12500+(income-500000)*0.02;
+            console.log(` total tax is ${tax}`)
+         }else{
+            tax=1,12,500+(income-1000000)*0.03;
+            console.log(` total tax is ${tax}`)
+         }
+    </script>
+    
+</body>
+</html>

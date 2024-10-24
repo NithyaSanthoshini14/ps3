@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var weight=parseInt(prompt("enter the parcel weight"))
+         let destination=prompt("where to reach")
+         cost=0
+         if(weight<=1){
+            if(destination=="local"){
+               cost=5
+            }
+            else if(destination=="national"){
+               cost=8
+            }
+            else if(destination=="International"){
+               cost=15
+            }
+         }
+         else if(weight>1 && weight<=5){
+            if(destination=="local"){
+               cost=10
+            }
+            else if(destination=="national"){
+               cost=15
+            }
+            else if(destination=="International"){
+               cost=30
+            }
+         }
+         else if(weight>10){
+            if(destination=="local"){
+               cost=30
+            }
+            else if(destination=="national"){
+               cost=35
+            }
+            else if(destination=="International")
+            cost=70
+         }
+         console.log(`total shipping cost of parcel is ${cost}`)
+
+
+    </script>
+    
+</body>
+</html>
